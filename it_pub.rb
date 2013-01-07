@@ -1,6 +1,5 @@
 require 'xmpp4r'
 require 'xmpp4r/pubsub'
-require 'xmpp4r/pubsub/helper/nodebrowser'
 require 'csv'
 include Jabber
 
