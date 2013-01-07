@@ -4,7 +4,7 @@ require 'xmpp4r/pubsub/helper/nodebrowser'
 require 'csv'
 include Jabber
 
-class ItPubSub
+class ItPub
 
   def self.publish_data(pub_sub_service, data)
     item = Jabber::PubSub::Item.new
