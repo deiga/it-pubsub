@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './it_pub_sub'
-run ItPubSub
+require './it_sub'
+run ItSub
