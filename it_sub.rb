@@ -7,7 +7,7 @@ class ItSub < Sinatra::Base
   configure :development do
     require 'sinatra/reloader'
     register Sinatra::Reloader
-    Jabber::debug = true
+    # Jabber::debug = true
   end
 
   configure do
@@ -30,7 +30,7 @@ class ItSub < Sinatra::Base
     @@pubsub.add_event_callback do |event|
       begin
         event.payload.each do |e|
-          puts e,"----\n"
+          puts "Message: #{e}","----\n"
         end
       rescue
         puts "Error : #{$!} \n #{event}"
